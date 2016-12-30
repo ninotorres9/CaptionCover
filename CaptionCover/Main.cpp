@@ -1,3 +1,4 @@
+
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/opencv.hpp"
@@ -10,8 +11,8 @@ using namespace std;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	string filename = "black.jpg";
-	string filename_0 = "black_0.jpg";		// Ö»ÓÐ±ß¿ò
+	string filename = "D:\\code\\CaptionCover\\CaptionCover\\black.jpg";
+	string filename_0 = "D:\\code\\CaptionCover\\CaptionCover\\black_0.jpg";		// Ö»ÓÐ±ß¿ò
 
 	Mat img = imread(filename_0);
 	namedWindow("ÕÚµ²´°¿Ú");//, WINDOW_NORMAL);
@@ -24,7 +25,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	}
 
 	imshow("ÕÚµ²´°¿Ú", img);
-	
+
 	while (true)
 	{
 		waitKey();
